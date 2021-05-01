@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(method="post")
+      .form-group
+        label(for='exampleInputEmail1') Telefon Modeli
+        input#exampleInputEmail1.form-control(type='text', name="name" aria-describedby='emailHelp')
+        small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+      .form-group
+        label(for='exampleInputPassword1') Narhi
+        input#exampleInputPassword1.form-control(type='text', name="price")
+      button.btn.btn-primary(type='submit') Submit
+    
